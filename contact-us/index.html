@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form &mdash; Xuaps Labs Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="/assets/cookies.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/logo.png"/>
+    <link href="/feed.xml" rel="alternate" type="application/rss+xml" title="Xuaps Labs Blog" />
+    <meta name="title" content="Contact Form ">
+    <link rel="canonical" href="http://localhost:4000/contact-us/">
+    
+    
+    <meta property="og:title" content="Contact Form "/>
+    <meta property="og:url" content="http://localhost:4000/contact-us/"/>
+    
+    
+    <meta property="og:site_name" content="Xuaps Labs Blog">
+</head>
+<body>
+
+<section class="site-nav">
+    <header>
+        <nav id="navigation">
+            <a class="brand" href="/">
+                <img src="/images/logo.png" alt="Inc">
+            </a>
+            <a href="/" class="home">Blog</a>
+            <a href="/products/">Product</a>
+            <a href="/about/">About</a>
+            <a href="/politica-de-privacidad/">Política de Privacidad</a>
+            <a href="/privacy-policy/">Privacy policy</a>
+        </nav>
+        <nav class="tagline">
+            <span>Supporting your dreams</span>
+            <a href="/products/" class="btn btn-outline">Learn More</a>
+        </nav>
+    </header>
+</section>
+
+
+<article>
+
+    <div class="container">
+        <header>
+            <h1 class="title">Contact Form</h1>
+            
+        </header>
+
+        <section>
+            <form action="http://getsimpleform.com/messages?form_api_token=b52456d6b14c8242bb9157eb2ecb69c7" method="post">
+  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+  <input type='hidden' name='redirect_to' value='http://xuaps.com' />
+  <!-- all your input fields here.... -->
+  <div>
+  <label for="email">Your Email:</label>
+  <input type='email' name='email' width="400px"/>
+  </div>
+  <div>
+  <label for="comments">Your Comments:</label>
+  <br>
+  <textarea name='comments' style="width:500px"></textarea>
+  </div>
+  <br>
+  <input type='submit' value='Send' />
+</form>
+            
+        </section>
+
+        
+    </div>
+</article>
+
+
+<footer class="site-footer">
+    <div class="container">
+        &copy; 2014
+
+        <nav>
+            <a href="http://xuaps.com/">Xuaps Labs</a> &middot;
+            <a href="/">Blog</a> &middot;
+            <a href="/products/">Product</a> &middot; 
+            <a href="/about/">About</a>
+      </nav>
+
+        <nav class="social">
+            
+            <a href="https://twitter.com/xuapslabs" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
+            
+            
+            <a href="/feed.xml" title="RSS Feed">
+                <i class="icon icon-rss black"></i>
+            </a>
+        </nav>
+        <p>Incorporated theme by <a href="https://sendtoinc.com">Inc</a></p>
+    </div>
+</footer>
+
+<!-- SCRIPT CONTROL DE COOKIES -->
+<script type="text/javascript">
+function controlcookies() {
+         // si variable no existe se crea (al clicar en Aceptar)
+    localStorage.controlcookie = (localStorage.controlcookie || 0);
+
+    localStorage.controlcookie++; // incrementamos cuenta de la cookie
+    cookie1.style.display='none'; // Esconde la política de cookies
+}
+</script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="/assets/main.js"></script>
+
+
+
+
+
+
+<!--Código HTML de la política de cookies -->
+
+<!--La URL incluida es la parte que se ha de modificar -->
+
+<div class="cookiesms" id="cookie1">
+This website uses cookies, you can see our  <a href="/cookies-privacy-policy/">cookies privacy policy, here.</a>
+If you continue with your navigation you are agree with that.
+<button onclick="controlcookies()">Ok</button>
+<div  class="cookies2" onmouseover="document.getElementById('cookie1').style.bottom = '0px';">Cookies privacy policy + </div>
+</div>
+<script type="text/javascript">
+if (localStorage.controlcookie>0){
+document.getElementById('cookie1').style.bottom = '-70px';
+}
+</script>
+
+<!-- Fin del código de cookies --->
+</body>
+</html>
